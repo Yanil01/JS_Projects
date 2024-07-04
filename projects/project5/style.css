@@ -1,79 +1,104 @@
-body{
-    height: 100vh;
-    background: url(back.jpg) no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* 
+    Styling for the body of the HTML document 
+*/
+body {
+  height: 100vh; /* Sets the body height to full viewport height */
+  background: url(back.jpg) no-repeat center center/cover; /* Background image centered and covering the viewport */
+  display: flex; /* Displays contents as a flex container */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
 }
-#add-task-container{
-    width: 350px;
-    padding: 20px 10px;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow:  0 3px ;
+
+/* 
+    Styling for the container holding the task input and button 
+*/
+#add-task-container {
+  width: 350px; /* Width of the container */
+  padding: 20px 10px; /* Padding inside the container */
+  background: #fff; /* White background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 3px; /* Box shadow for a subtle 3px drop shadow */
 }
-input{
-    flex: 5;
-    margin-right: 10px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    padding: 5px;
+
+/* 
+    Styling for the input field for entering tasks 
+*/
+input {
+  flex: 5; /* Takes up 5 times the space compared to the button */
+  margin-right: 10px; /* Margin on the right side */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1.2rem; /* Font size */
+  padding: 5px; /* Padding inside the input field */
 }
-#add-task{
-    flex: 1;
-    transition: .3s;
-    font-size: 1.2rem;
-    padding: 5px;
-    background-color: #fff;
-    color: green;
-    border: 2px solid green;
-    border-radius: 10px;
+
+/* 
+    Styling for the add task button 
+*/
+#add-task {
+  flex: 1; /* Takes up 1 times the space compared to the input */
+  transition: 0.3s; /* Smooth transition over 0.3 seconds */
+  font-size: 1.2rem; /* Font size */
+  padding: 5px; /* Padding inside the button */
+  background-color: #fff; /* White background */
+  color: green; /* Green text color */
+  border: 2px solid green; /* Green border */
+  border-radius: 10px; /* Rounded corners */
 }
-#add-task:hover{
-    background-color: green;
-    color: #fff;
+
+#add-task:hover {
+  background-color: green; /* Green background on hover */
+  color: #fff; /* White text color on hover */
 }
-/* Styling for task which get added to to-do list */
-.task{
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 3px;
-    padding: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
+
+/* 
+    Styling for each task item in the to-do list 
+*/
+.task {
+  width: 100%; /* Full width */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 3px; /* Box shadow for a subtle 3px drop shadow */
+  padding: 5px; /* Padding inside the task item */
+  margin-bottom: 5px; /* Margin at the bottom */
+  display: flex; /* Displays contents as a flex container */
+  justify-content: space-between; /* Spacing between items */
 }
-.task li{
-    list-style: none;
-    flex: 4;
-    padding: 5px;
-    font-size: 1.3rem;
-    margin: 10px;
+
+.task li {
+  list-style: none; /* Removes default list styles */
+  flex: 4; /* Takes up 4 times the space compared to the buttons */
+  padding: 5px; /* Padding inside the list item */
+  font-size: 1.3rem; /* Font size */
+  margin: 10px; /* Margin around the text */
 }
-.task button{
-    flex: 1;
-    border-radius: 10px;
-    background-color: #fff;
-    cursor: pointer;
+
+.task button {
+  flex: 1; /* Takes up 1 times the space compared to the list item */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  cursor: pointer; /* Cursor pointer on hover */
 }
-.task .checkTask{
-    color: orange;
-    margin-right: 5px;
-    border: 2px solid orange;
-    font-size: 1.5rem;
+
+.task .checkTask {
+  color: orange; /* Orange text color */
+  margin-right: 5px; /* Margin on the right side */
+  border: 2px solid orange; /* Orange border */
+  font-size: 1.5rem; /* Larger font size */
 }
-.task .checkTask:hover{
-    background-color: orange;
-    color: #fff;
+
+.task .checkTask:hover {
+  background-color: orange; /* Orange background on hover */
+  color: #fff; /* White text color on hover */
 }
-.task .deleteTask{
-    color: red;
-    margin-right: 5px;
-    border: 2px solid red;
-    font-size: 1.3rem;
+
+.task .deleteTask {
+  color: red; /* Red text color */
+  margin-right: 5px; /* Margin on the right side */
+  border: 2px solid red; /* Red border */
+  font-size: 1.3rem; /* Font size */
 }
-.task .deleteTask:hover{
-    background-color: red;
-    color: #fff;
+
+.task .deleteTask:hover {
+  background-color: red; /* Red background on hover */
+  color: #fff; /* White text color on hover */
 }

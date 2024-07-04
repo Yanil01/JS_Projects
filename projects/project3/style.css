@@ -1,60 +1,73 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
-body{
-    background: url("book.jpeg") no-repeat center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Global styles to reset and set defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.accordion{
-    width: 65%;
-    background-color: white;
-    padding: 30px;
-    border-radius: 30px;
-}
-.accordion .accordion-title{
-    margin-bottom: 30px;
-    text-align: center;
-}
-.accordion .content-container .question{
-    padding: 18px 0px;
-    font-size: 22px;
-    cursor: pointer;
-    border-bottom: 1px solid #000;
-    position: relative;
-} 
-.accordion .content-container .question::after{
-    content: '+';
-    position: absolute;
-    right: -5px;
-}
-.accordion .content-container .answer{
-    padding-top: 15px;
-    font-size: 22px;
-    line-height: 1,5;
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    transition: .5s;
+/* Body styles */
+body {
+  background: url("book.jpeg") no-repeat center/cover; /* Background image */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-/* Javascript Styling link */
+/* Accordion container styles */
+.accordion {
+  width: 65%; /* Width of the accordion container */
+  background-color: white; /* Background color */
+  padding: 30px; /* Padding inside the accordion */
+  border-radius: 30px; /* Rounded corners */
+}
 
-.accordion .content-container.active .answer{
-    height: 150px;
+/* Accordion title styles */
+.accordion .accordion-title {
+  margin-bottom: 30px; /* Bottom margin for spacing */
+  text-align: center; /* Center-align text */
 }
-.accordion .content-container.active .question{
-    font-size: 18px;
-    transition: .5s;
+
+/* Question styles */
+.accordion .content-container .question {
+  padding: 18px 0px; /* Padding inside each question */
+  font-size: 22px; /* Font size */
+  cursor: pointer; /* Cursor style on hover */
+  border-bottom: 1px solid #000; /* Bottom border */
+  position: relative; /* Relative positioning for ::after pseudo-element */
 }
-.accordion .content-container.active .question::after{
-    content: '-';
-    font-size: 30px;
-    transition: .5s;
+
+/* Styling for '+' symbol after question */
+.accordion .content-container .question::after {
+  content: "+"; /* Content of the ::after pseudo-element */
+  position: absolute; /* Absolute positioning */
+  right: -5px; /* Positioning to the right of the question */
+}
+
+/* Answer styles */
+.accordion .content-container .answer {
+  padding-top: 15px; /* Top padding for spacing */
+  font-size: 22px; /* Font size */
+  line-height: 1.5; /* Line height for readability */
+  width: 100%; /* Full width */
+  height: 0px; /* Initially hidden */
+  overflow: hidden; /* Hide overflow content */
+  transition: 0.5s; /* Smooth transition effect */
+}
+
+/* Styles applied by JavaScript when accordion item is active */
+
+.accordion .content-container.active .answer {
+  height: 150px; /* Height of the expanded answer */
+}
+
+.accordion .content-container.active .question {
+  font-size: 18px; /* Font size of the question when active */
+  transition: 0.5s; /* Smooth transition effect */
+}
+
+.accordion .content-container.active .question::after {
+  content: "-"; /* Change content to '-' when active */
+  font-size: 30px; /* Larger font size */
+  transition: 0.5s; /* Smooth transition effect */
 }

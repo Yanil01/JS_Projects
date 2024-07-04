@@ -1,47 +1,64 @@
 /* 
 Stop-Watch Styling
  */
-body{
-    height: 100vh;
-    background: url(premium.avif) no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Styling for the entire body */
+body {
+  height: 100vh; /* Full height of the viewport */
+  background: url(premium.avif) no-repeat center center/cover; /* Background image centered and covering the entire viewport */
+  display: flex; /* Flexbox container for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-.container{
-    width: 60%;
-    height: 250px;
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 0 3px;
+/* Styling for the main container */
+.container {
+  width: 60%; /* 60% width of its containing element */
+  height: 250px; /* Fixed height */
+  background-color: #fff; /* White background */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 0 3px; /* Light shadow for depth */
 }
-#timer{
-    width: 100%;
-    font-size: 72px;
-    text-align: center;
-    margin: 0px auto;
-    padding: 35px;
+
+/* Styling for the timer display */
+#timer {
+  width: 100%; /* Full width */
+  font-size: 72px; /* Large font size for the timer */
+  text-align: center; /* Center align text */
+  margin: 0 auto; /* Center horizontally */
+  padding: 35px; /* Padding around the timer */
 }
-.buttons{
-    text-align: center;
+
+/* Styling for the buttons container */
+.buttons {
+  text-align: center; /* Center align buttons */
 }
-button{
-    margin: 0 10px;
-    border: none;
+
+/* Styling for all buttons */
+button {
+  margin: 0 10px; /* Margin around each button */
+  border: none; /* No border */
 }
-button i{
-    font-size: 2rem;
-    padding: 10px;
-    color: #fff;
-    width: 50px;
+
+/* Styling for icon inside buttons */
+button i {
+  font-size: 2rem; /* Icon size */
+  padding: 10px; /* Padding around the icon */
+  color: #fff; /* White color for icon */
+  width: 50px; /* Fixed width for the button */
 }
- #play{
-    background-color: green;
- }
- #pause{
-    background-color: orange;
- }
- #reset{
-    background-color: red;
- }
+
+/* Styling for play button */
+#play {
+  background-color: green; /* Green background color */
+}
+
+/* Styling for pause button */
+#pause {
+  background-color: orange; /* Orange background color */
+}
+
+/* Styling for reset button */
+#reset {
+  background-color: red; /* Red background color */
+}

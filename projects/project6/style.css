@@ -1,66 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background-color: #00ADB5;
-    text-align: center;
+body {
+  background-color: #00adb5; /* Sets the background color of the entire page */
+  text-align: center; /* Centers the text horizontally within the body */
 }
-.container{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.container {
+  height: 70vh; /* Sets the container height to 70% of the viewport height */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
 }
-.game{
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5vmin;
+
+.game {
+  height: 60vmin; /* Sets the game board height to 60% of the viewport's minimum dimension (height or width) */
+  width: 60vmin; /* Sets the game board width to 60% of the viewport's minimum dimension */
+  display: flex;
+  flex-wrap: wrap; /* Allows boxes to wrap to the next line if the container is too small */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  gap: 1.5vmin; /* Adds spacing between game boxes */
 }
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    font-size: 8vmin;
-    color: #EEEEEE;
-   background-color: #393E46;
+
+.box {
+  height: 18vmin; /* Sets each box height to 18% of the viewport's minimum dimension */
+  width: 18vmin; /* Sets each box width to 18% of the viewport's minimum dimension */
+  border-radius: 1rem; /* Rounds the corners of each box */
+  border: none; /* Removes default border */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to each box */
+  font-size: 8vmin; /* Sets the font size inside each box to 8% of the viewport's minimum dimension */
+  color: #eeeeee; /* Sets text color inside each box */
+  background-color: #393e46; /* Sets background color of each box */
 }
-#reset-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #222831;
-    color: #EEEEEE;
-    border-radius: 1rem;
-    border: none;
+
+#reset-btn,
+#new-btn {
+  padding: 1rem; /* Adds padding inside the buttons */
+  font-size: 1.25rem; /* Sets the font size of the buttons */
+  background-color: #222831; /* Background color of the buttons */
+  color: #eeeeee; /* Text color of the buttons */
+  border-radius: 1rem; /* Rounds the corners of the buttons */
+  border: none; /* Removes default button border */
 }
-#new-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #222831;
-    color: #EEEEEE;
-    border-radius: 1rem;
-    border: none;
+
+#msg {
+  color: #eeeeee; /* Sets text color of the message */
+  font-size: 5vmin; /* Sets the font size of the message to 5% of the viewport's minimum dimension */
 }
-#msg{
-    color: #EEEEEE;
-    font-size: 5vmin;
+
+.msg-container {
+  height: 100vmin; /* Sets the message container height to 100% of the viewport's minimum dimension */
+  display: flex;
+  flex-wrap: wrap; /* Allows elements to wrap to the next line if the container is too small */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  flex-direction: column; /* Arranges content in a column layout */
+  gap: 4rem; /* Adds spacing between elements */
 }
-.msg-container{
-    height: 100vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
-}
-.hide{
-    display: none;
+
+.hide {
+  display: none; /* Hides the message container by default */
 }
